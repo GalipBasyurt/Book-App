@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 12vh;
+  background-color: #f94c10;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.navbar .title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.footer {
+  background-color: #f94c10;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+
+.book-list {
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-items: center;
+  margin: 40px 0;
+}
+
+.favorites {
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  /* column-gap: -10px; */
+  /* row-gap: 10px; */
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.book-list .book-card,
+.favorites .book-card {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  width: 300px;
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+  position: relative;
+}
+
+.book-list .book-card .image,
+.favorites .book-card .image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.book-list .book-card .image img,
+.favorites .book-card .image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.book-list .book-card .subtitle,
+.favorites .book-card .subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+}
+
+.book-list .book-card .subtitle .book-name,
+.favorites .book-card .subtitle .book-name {
+  font-size: 18px;
+}
+
+.book-list .book-card .subtitle .author,
+.favorites .book-card .subtitle .author {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+
+.book-list .book-card button,
+.favorites .book-card button {
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f94c10;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+
+.book-list .book-card button:hover {
+  background-color: #c73605;
+}
+
+.book-detail {
+  min-height: 80vh;
+  width: 100%;
+}
+
+.book-detail .book-detail-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-detail .book-detail-wrap .image {
+  /* margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 35px; */
+  margin: 45px 30px 0 35px;
+}
+
+.image img {
+  max-width: 300px;
+  height: 400px;
+}
+
+.explanation {
+  max-width: 600px;
+}
+
+.explanation .title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.explanation .author {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: rgb(82, 78, 78);
+}
